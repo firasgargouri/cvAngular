@@ -1,9 +1,21 @@
 <div class="row">
   <div class="col-4">
-    <app-list (fowardSelectedPerson)="getSelectedPersonne($event)"></app-list>
+    <app-list
+    [cvService]="cvService"
+    (fowardSelectedPerson)="getSelectedPersonne($event)"
+
+    ></app-list>
   </div>
 
   <div class="col">
-    <app-carte [personne]="selectedPersonne"></app-carte>
+    <app-carte
+    [personne]="selectedPersonne"
+    [embaucheService]="embaucheService"
+    ></app-carte>
   </div>
+</div>
+<div>
+  <app-embauche
+  [personnesEmbauchees]="personnesEmbauchees"
+  ></app-embauche>
 </div>

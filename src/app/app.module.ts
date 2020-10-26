@@ -28,6 +28,7 @@ import { TestngIFComponent } from './directives/testng-if/testng-if.component';
 import { RandomPipePipe } from './pipes/random-pipe.pipe';
 import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { TodoComponent } from './todo/component/todo/todo.component';
+import { EmbaucheComponent } from './cv/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { TodoComponent } from './todo/component/todo/todo.component';
     RandomPipePipe,
     DefaultImagePipe,
     TodoComponent,
+    EmbaucheComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
