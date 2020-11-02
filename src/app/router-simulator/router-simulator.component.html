@@ -1,0 +1,12 @@
+<select class="form-contril"[(ngModel)]="select" [routerLink]="[select]">
+  <option value="">Home</option>
+  <option value="cv">CV</option>
+  <option value="todo">Todo</option>
+  <option value="color">Color</option>
+</select>
+<select class="form-contril"[(ngModel)]="select" (change)="naviguer()">
+  <option value="">Home</option>
+  <option value="cv">CV</option>
+  <option value="todo">Todo</option>
+  <option value="color">Color</option>
+</select>

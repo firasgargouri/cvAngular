@@ -1,0 +1,24 @@
+<div class="container">
+  <img
+          class="img-circle"
+          src="assets/images/{{ person?.path | defaultImage }}"
+        />
+
+  <div class="row">
+    Name: {{person.firstname}} {{person.name}}
+  </div>
+  <div class="row">
+    CIN: {{person.cin}}
+  </div>
+  <div class="row">
+    Age: {{person.age}}
+  </div>
+  <div class="row">
+    Job: {{person.job}}
+  </div>
+
+
+
+
+  <button class="btn btn-danger"(click)="deleteCV()">Delete CV</button>
+</div>
